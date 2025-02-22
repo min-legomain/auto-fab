@@ -5,7 +5,7 @@ const App: React.FC = () => {
   const [message, setMessage] = useState<string>('');
 
   const handleClick = () => {
-    fetch('http://localhost:8080/api/test')
+    fetch(process.env.REACT_APP_GO_SERVER_ADDRESS + '/api/test')
       .then((response) => response.json())
       .then((data) => setMessage(data.message));
   };

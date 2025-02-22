@@ -1,0 +1,28 @@
+# Node.js関連
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# .envrc - direnvの設定ファイル（環境変数を含むのでGitに含めない）
+.envrc
+
+# .env - Reactの環境変数設定ファイル（プロジェクトに個別の設定がある場合、Gitに含めない）
+.env
+
+# Goのビルド結果
+bin/
+build/
+
+# Reactのビルド結果
+/front/build/
+
+# OS固有のファイル（macOSやWindowsの一時ファイルなど）
+.DS_Store
+Thumbs.db
+
+# IDE/エディタ関連（VSCode、IntelliJなど）
+.vscode/
+.idea/
+
+# バックアップファイル（エディタによる）
+*~
