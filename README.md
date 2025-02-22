@@ -6,6 +6,7 @@ flesh and bloodのカード情報取得サービス
 ### 1. **バックエンド**
 ```bash
 make run-server
+```
 
 ### 2. **フロントエンド**
 ```bash
