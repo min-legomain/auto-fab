@@ -1,0 +1,35 @@
+#!/bin/sh
+
+echo "Running gofmt..."
+gofmt -w server/
+git add server/
+
+echo "Running golangci-lint..."
+(cd server && golangci-lint run)
+if [ $? -ne 0 ]; then
+  echo "golangci-lint found issues, commit aborted."
+  exit 1
+fi
+
+echo "Running gosec..."
+(cd server && gosec ./...)
+if [ $? -ne 0 ]; then
+  echo "gosec found security issues, commit aborted."
+  exit 1
+fi
+
+echo "Running prettier..."
+npx prettier --write front/
+git add front/
+
+echo "Running ESLint..."
+(
+  cd front && npx eslint .
+)
+if [ $? -ne 0 ]; then
+  echo "ESLint found issues, commit aborted."
+  exit 1
+fi
+
+echo "Security checks and formatting completed."
+
