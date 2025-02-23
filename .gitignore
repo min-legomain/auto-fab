@@ -26,3 +26,7 @@ Thumbs.db
 
 # バックアップファイル（エディタによる）
 *~
+
+# Prettier cache
+front/.prettiercache
+
