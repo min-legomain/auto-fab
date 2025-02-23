@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "Running gofmt..."
+gofmt -w server/
+git add server/
+
+echo "Running prettier..."
+npx prettier --write front/
+git add front/
+
+echo "Formatting completed."
+
