@@ -1,0 +1,82 @@
+{
+  "heroAndArena": [
+    {
+      "engName": "Fire Hero",
+      "jpName": "火の英雄",
+      "quantity": 1
+    },
+    {
+      "engName": "Fire Sword",
+      "jpName": "火の剣",
+      "quantity": 1
+    },
+    {
+      "engName": "Fire head",
+      "jpName": "火の頭",
+      "quantity": 1
+    },
+    {
+      "engName": "Fire armor",
+      "jpName": "火の鎧",
+      "quantity": 1
+    },
+    {
+      "engName": "Fire hand",
+      "jpName": "火の手",
+      "quantity": 1
+    },
+    {
+      "engName": "Fire foot",
+      "jpName": "火の足",
+      "quantity": 1
+    }
+  ],
+  "deck": [
+    {
+      "engName": "Flame Dragon",
+      "jpName": "炎の竜",
+      "quantity": 1
+    },
+    {
+      "engName": "Water Dragon",
+      "jpName": "水の竜",
+      "quantity": 2
+    }
+  ],
+  "sideBoard": [
+    {
+      "engName": "Earth Dragon",
+      "jpName": "土の竜",
+      "quantity": 1
+    },
+    {
+      "engName": "Wind Dragon",
+      "jpName": "風の竜",
+      "quantity": 1
+    }
+  ],
+  "tokens": [
+    {
+      "engName": "Fire Token",
+      "jpName": "火のトークン",
+      "quantity": 1
+    },
+    {
+      "engName": "Water Token",
+      "jpName": "水のトークン",
+      "quantity": 1
+    }
+  ],
+  "maybe": [
+    {
+      "engName": "Fire Dragon",
+      "jpName": "火の竜",
+      "quantity": 1
+    },
+    {
+      "engName": "Ice Dragon",
+      "jpName": "氷の竜",
+      "quantity": 1
+    }
+  ]
+}
