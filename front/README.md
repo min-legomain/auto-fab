@@ -50,42 +50,50 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 To install and manage MySQL on your development environment:
 
 ### Install MySQL
+
 ```sh
 brew install mysql
 ```
 
 ### Start MySQL Server
+
 ```sh
 mysql.server start
 ```
 
 ### Stop MySQL Server
+
 ```sh
 mysql.server stop
 ```
 
 ### Verify Installation
+
 ```sh
 mysql --version
 ```
 
 ### Secure MySQL Setup
+
 ```sh
 mysql_secure_installation
 ```
+
 Follow the prompts to secure your MySQL installation.
 
 ### Connect to MySQL
+
 ```sh
 mysql -u root -p
 ```
+
 Enter your password when prompted.
 
 ### Create Database and User
+
 ```sql
 CREATE DATABASE auto_fab;
 CREATE USER 'auto_fab_user'@'localhost' IDENTIFIED BY 'your_secure_password';
 GRANT ALL PRIVILEGES ON auto_fab.* TO 'auto_fab_user'@'localhost';
 FLUSH PRIVILEGES;
 ```
-

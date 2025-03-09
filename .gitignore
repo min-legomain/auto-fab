@@ -9,6 +9,9 @@ yarn-error.log
 # .env - Reactの環境変数設定ファイル（プロジェクトに個別の設定がある場合、Gitに含めない）
 .env
 
+# tmp - 一時ファイル
+tmp/
+
 # Goのビルド結果
 bin/
 build/
