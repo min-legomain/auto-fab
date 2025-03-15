@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 
 	"github.com/min-legomain/auto-fab/server/middleware"
+	"github.com/min-legomain/auto-fab/server/routes"
 )
 
 func main() {
@@ -18,11 +19,12 @@ func main() {
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		AllowCredentials: true,
 	}))
+
+	// レートリミット
 	r.Use(middleware.RateLimiter())
 
-	r.GET("/api/test", func(c *gin.Context) {
-		c.JSON(200, gin.H{"message": "Test endpoint reached!"})
-	})
+	// ルーティング
+	routes.SetupRouter(r)
 
 	if err := r.Run(":8080"); err != nil {
 		log.Fatalf("Failed to start server: %v", err)
