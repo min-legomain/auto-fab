@@ -1,6 +1,3 @@
-//DBからカードと金額のリストを取得する
-//req fetch_id, res カードリスト
-
 package apis
 
 import (
@@ -10,9 +7,9 @@ import (
 )
 
 // 仮の関数を作成
-func GetCardList(c *gin.Context) {
+func Test(c *gin.Context) {
 	// サンプルのレスポンスデータ
-	response := gin.H{"message": "Hello, World!"}
+	response := gin.H{"message": "test api  is called"}
 
 	// JSON レスポンスを返す
 	c.JSON(http.StatusOK, response)
