@@ -8,4 +8,5 @@ import (
 
 func SetupRouter(r *gin.Engine) {
 	r.GET("/api/test", apis.Test)
+	r.GET("/api/decks", apis.GetDeckList)
 }
