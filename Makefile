@@ -6,7 +6,7 @@ run-server:
 
 # Reactフロントエンドの開発サーバーの起動
 run-front:
-	cd front && npm start
+	cd front && npm run dev
 
 # バックエンドとフロントエンドの開発サーバーを並行して起動
 run: 
