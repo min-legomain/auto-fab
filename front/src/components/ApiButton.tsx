@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { Button } from "@/components/ui/button";
 
 export default function ApiButton() {
   const [loading, setLoading] = useState(false);
@@ -27,13 +28,13 @@ export default function ApiButton() {
 
   return (
     <div className="flex flex-col items-center gap-4 p-4">
-      <button
+      <Button
         onClick={handleClick}
         disabled={loading}
         className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 disabled:bg-gray-400"
       >
         {loading ? "読み込み中..." : "APIをコール"}
-      </button>
+      </Button>
 
       {data && (
         <pre className="p-2 bg-gray-100 border rounded w-full max-w-md text-sm">
