@@ -14,6 +14,9 @@ func GetCardList(c *gin.Context) {
 	// サンプルのレスポンスデータ
 	response := gin.H{"message": "Hello, World!"}
 
+	//ここでdeckCrawlerのscenario.executeを実行する
+
+	//tmpにカードリストを保存する
 	// JSON レスポンスを返す
 	c.JSON(http.StatusOK, response)
 }

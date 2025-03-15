@@ -5,5 +5,19 @@
 package deckCrawler
 
 // func execute(url string) (string, error) {
+// 	res resDecks = GetDeckList(url)
+// 	saveDeckList(resDecks)
 // 	return url, nil
+// }
+
+//具体的な処理内容をメソッドにする
+
+// デッキリストを取得する
+// func GetDeckList(url string) (string, error) {
+// 	return "", nil
+// }
+
+// レスポンスをjsonデータにコンバートし、tmpファイルに保存する
+// func saveDeckList(res string) (string, error) {
+// 	return "", nil
 // }
