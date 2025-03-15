@@ -7,3 +7,10 @@ package deckCrawler
 // func execute(url string) (string, error) {
 // 	return url, nil
 // }
+
+//具体的な処理内容をメソッドにする
+
+// デッキリストを取得する
+func GetDeckList(url string) (string, error) {
+	return "", nil
+}
