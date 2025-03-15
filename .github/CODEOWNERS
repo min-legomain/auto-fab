@@ -1,5 +1,4 @@
 # CODEOWNERS
 
 # 自分自身をリポジトリ全体のオーナーとして指定
-* @min-legomain
-* @jyoryutaro
+* @min-legomain @jyoryutaro @kkrncn
