@@ -20,7 +20,7 @@ make run-front
 以下のコマンドを実行して、新しいコンポーネントを追加します。
 
 ```sh
-npx shadcn@latest add [コンポーネント名]
+npx shadcn add [コンポーネント名]
 ```
 
 ### **💡 例: ボタン・カード・入力フォームを追加**
